@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - include: 
+      file: db/changelog/changeset/create-user-table.sql
+  - include:
+      file: db/changelog/changeset/create-store-table.sql
+  - include:
+      file: db/changelog/changeset/create-game-table.sql
+  - include:
+      file: db/changelog/changeset/create-wishlist-table.sql
+  - include:
+      file: db/changelog/changeset/create-game_price-table.sql
