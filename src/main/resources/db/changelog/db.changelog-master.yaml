@@ -9,3 +9,13 @@ databaseChangeLog:
       file: db/changelog/changeset/create-wishlist-table.sql
   - include:
       file: db/changelog/changeset/create-game_price-table.sql
+  - include:
+      file: db/changelog/changeset/add-cascade-to-wishlist.sql
+  - include:
+      file: db/changelog/changeset/add-cascade-to-game_price.sql
+  - include:
+      file: db/changelog/changeset/drop-genre-from-game.sql
+  - include:
+      file: db/changelog/changeset/add-genre-table.sql
+  - include:
+      file: db/changelog/changeset/add-game_genre-table.sql

@@ -1,0 +1,4 @@
+CREATE TABLE genre(
+    genre_id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(128) UNIQUE NOT NULL
+)
