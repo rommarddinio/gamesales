@@ -8,6 +8,7 @@ import org.hibernate.annotations.BatchSize;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Objects;
+import java.util.Set;
 
 @Entity
 @Table(name = "game")
@@ -29,6 +30,10 @@ public class Game extends Auditable{
     @OneToMany(mappedBy = "game")
     @BatchSize(size = 5)
     private List<GamePrice> gamePrice;
+
+    @OneToMany(mappedBy = "pk.game")
+    @BatchSize(size = 5)
+    private Set<GameGenre> genres;
 
     @Override
     public boolean equals(Object o) {
